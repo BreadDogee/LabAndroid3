@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayoutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="end"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:text="Hello"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:text="Hi"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="end"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:text="How r u?"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:text="I'm fine"
+                    android:textSize="32sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="text"
+                android:text="your text" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Send" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

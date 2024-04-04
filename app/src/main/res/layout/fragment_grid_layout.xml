@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridLayoutFragment">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/GridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="6"
+        app:rowCount="5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="681dp"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_row="0">
+
+            <LinearLayout
+                android:id="@+id/linear_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="Hi"
+                    android:textSize="32dp"
+                    android:gravity="end"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="Hello"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="How r u?"
+                    android:textSize="32dp"
+                    android:gravity="end"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="I'm fine"
+                    android:textSize="32dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/editTextText8"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="your message"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</FrameLayout>
